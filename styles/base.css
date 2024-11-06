@@ -17,10 +17,10 @@ body {
 }
 
 header {
-    display: grid;
+    display: block;
     align-items: center;
     justify-content: center;
-    padding: 0px 20px 0px 20px;
+    padding: 0px;
     width: 100%;
     background-color: var(--secondary-color);
 }
@@ -29,22 +29,22 @@ main {
     margin: 0 auto;
 }
 
-header div {
+.header {
+    text-align: center;
     background-color: var(--secondary-color);
-    width: fill;
+    width: 100%;
+    padding: 10px;
 }
 
 h1 {
     font-size: 2rem;
     color: white;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 nav {
     background-color: black;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 400px;
     min-width: 100%;
 }
 
@@ -197,6 +197,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 1.9rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
