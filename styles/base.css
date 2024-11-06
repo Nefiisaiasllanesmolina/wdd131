@@ -17,27 +17,32 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 0px 20px;
+    width: 100%;
 }
 
-header, main {
+main {
     margin: 0 auto;
+}
+
+header div {
+    background-color: var(--secondary-color);
 }
 
 h1 {
     font-size: 2rem;
     color: white;
+    margin-bottom: 10px;
 }
 
 nav {
     background-color: black;
     margin: 0 auto;
     max-width: 1200px;
+    min-width: 100%;
 }
 
 nav .navigation {
@@ -207,13 +212,13 @@ main {
 
 footer {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     line-height: 1.6;
 }
 
 footer #lastModified {
-    color: lightgoldenrodyellow;
+    color: var(--primary-color);
 }
 
