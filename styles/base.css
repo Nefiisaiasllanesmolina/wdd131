@@ -110,7 +110,7 @@ main {
     grid-column: 1;
     grid-row: 2;
     color: black;
-    padding: 1rem 1.5rem 1rem 3rem;
+    padding: 2rem 1.5rem 1rem 3rem;
     display: flex;
     align-items: center;
     line-height: 1.6;
@@ -123,7 +123,7 @@ main {
     grid-row: 2;
     max-width: 70%;
     margin: auto;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 .cardonesecond {
