@@ -174,7 +174,7 @@ main {
 .cardonesecond figcaption {
     color: var(--secondary-color);
     text-align: center;
-    font-size: 12px;
+    font-size: 80%;
     color: var(--primary-color);
 }
 
