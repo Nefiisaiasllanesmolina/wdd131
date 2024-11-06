@@ -216,10 +216,11 @@ footer {
     padding: 1rem;
     text-align: center;
     line-height: 1.6;
+    font-size: 100%;
 }
 
 footer #lastModified {
     color: white;
-    font-size: small;
+    font-size: 80%;
 }
 
