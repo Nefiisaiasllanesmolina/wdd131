@@ -22,7 +22,6 @@ header {
     justify-content: center;
     padding: 0px;
     width: 100%;
-    background-color: var(--secondary-color);
 }
 
 main {
@@ -44,8 +43,7 @@ h1 {
 nav {
     background-color: black;
     margin: 0 auto;
-    max-width: 400px;
-    min-width: 100%;
+    max-width: 90%;
 }
 
 nav .navigation {
