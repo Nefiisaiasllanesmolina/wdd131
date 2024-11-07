@@ -230,12 +230,13 @@ footer #lastModified {
     font-size: 80%;
 }
 
+
 @media only screen and (max-width: 600px) {
     footer p {
-      font-size: 70%;
+      font-size: 100%;
     }
 
     footer #lastModified {
-        font-size: 50%;
-    }
+        font-size: 80%;
+      }
   }
