@@ -39,6 +39,12 @@ h1 {
     color: white;
 }
 
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 80%
+    }
+}
+
 nav {
     background-color: black;
     margin: 0 auto;
@@ -245,7 +251,7 @@ footer #lastModified {
 
 @media only screen and (max-width: 600px) {
     footer p {
-      font-size: 80%;
+      font-size: 70%;
     }
 
     footer #lastModified {
