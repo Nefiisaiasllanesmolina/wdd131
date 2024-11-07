@@ -213,10 +213,24 @@ main {
 .cardtwo .navigation a {
     background-color: aqua;
     max-width: fit-content;
-    font-size: 80%
+    font-size: 100%
 }
 
+@media only screen and (max-width: 800px) {
+    .cardtwo .navigation a {
+        background-color: aqua;
+        max-width: fit-content;
+        font-size: 80%
+    }
+}
 
+@media only screen and (max-width: 600px) {
+    .cardtwo .navigation a {
+        background-color: aqua;
+        max-width: fit-content;
+        font-size: 60%
+    }
+}
 
 
 
