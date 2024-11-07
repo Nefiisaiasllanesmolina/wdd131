@@ -224,6 +224,13 @@ footer {
     line-height: 1.6;
 }
 
+.footer {
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: fit-content;
+
+}
+
 footer p {
     font-size: 100%;
 }
