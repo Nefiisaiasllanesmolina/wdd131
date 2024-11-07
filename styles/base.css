@@ -80,7 +80,7 @@ nav a:hover {
     }
 
     nav ul li {
-        flex: 1 1 100%;
+        flex: 1 1 80%;
     }
 }
 
