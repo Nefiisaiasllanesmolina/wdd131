@@ -231,10 +231,6 @@ footer #lastModified {
 }
 
 @media only screen and (max-width: 600px) {
-    footer {
-      background-color: black;
-    }
-
     footer p {
         font-size: 70%;
     }
