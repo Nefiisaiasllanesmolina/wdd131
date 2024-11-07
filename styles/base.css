@@ -36,7 +36,6 @@ main {
 }
 
 h1 {
-    font-size: 2em;
     color: white;
 }
 
@@ -233,6 +232,7 @@ footer {
 
 footer p {
     font-size: 100%;
+    background-color: black;
 }
 
 footer #lastModified {
