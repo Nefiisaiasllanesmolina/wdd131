@@ -232,10 +232,10 @@ footer #lastModified {
 
 @media only screen and (max-width: 600px) {
     footer p {
-        font-size: 100%;
+        font-size: 70%;
     }
 
     footer #lastModified {
-        font-size: 80%;
+        font-size: 50%;
     }
   }
