@@ -223,21 +223,12 @@ footer {
     line-height: 1.6;
 }
 
-.footer {
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: fit-content;
-
-}
-
 footer p {
-    font-size: 100%;
     background-color: black;
 }
 
 footer #lastModified {
     color: yellow;
-    font-size: 80%;
 }
 
 
