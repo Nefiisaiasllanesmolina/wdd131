@@ -208,8 +208,12 @@ main {
     padding: 2rem;
     margin-top: 20%;
     margin-bottom: 20%;
+}
+
+.cardtwo .navigation li {
     background-color: aqua;
     max-width: fit-content;
+    font-size: 1rem;
 }
 
 
