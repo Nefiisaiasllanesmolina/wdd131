@@ -16,82 +16,82 @@ body {
     font-family: "Sansita" , sans-serif;
 }
 
-header {
-	background-color: var(--secondary-color);
-	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
-}
 
-header,
-main {
-	margin: 0 auto;
-}
-
-h1 {
+#menu {
+	display: block;
 	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+header{
+    display: block;
+    background-color: var(--secondary-color);
+}
+
+.h1header{
     color: white;
 }
 
 nav {
 	background-color: var(--secondary-color);
 }
-
-nav ul {
+.navigation {
 	list-style: none;
-	display: flex;
-	flex-direction: column;
+	margin: 0 auto;
+	max-width: 760px;
 }
 
-nav a {
+.navigation li {
+	display: none;
+}
+.navigation a {
 	display: block;
-	color: #fff;
+	padding: 0.75rem;
 	text-align: center;
-	padding: 1rem;
 	text-decoration: none;
-	font-size: larger;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-nav a:hover {
-	text-decoration: underline double;
-	background-color: #eee;
-	color: #000;
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
 }
 
-.active {
-	color: yellow;
+.show li {
+	display: block;
 }
 
-/* Larger Views ******************************/
-@media (min-width: 740px) {
-	header {
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	.navigation {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
 	}
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
+	.navigation li {
+		display: block; /* change state in small view */
 		flex: 1 1 100%;
 	}
-}
-
-
-
-footer {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    line-height: 1.6;
-    font-size: 100%;
-}
-
-footer #lastModified {
-    color: yellow;
-    font-size: 80%;
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
