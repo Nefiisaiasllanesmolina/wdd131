@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #031D44;
+    --secondary-color: #0076B6;
+    --third-color: #70A288;
+    --fourth-color: #DAB785;
+    --fifth-color: #D5896F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita" , sans-serif;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 100%;
+}
+
+footer #lastModified {
+    color: yellow;
+    font-size: 80%;
+}
