@@ -24,6 +24,10 @@ header {
     width: 100%;
 }
 
+main {
+    margin: 0 auto;
+}
+
 .header {
     text-align: center;
     background-color: var(--secondary-color);
@@ -108,7 +112,6 @@ main {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-gap: 2rem;
-    margin: 0 auto;
 }
 
 .cardone {
