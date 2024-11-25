@@ -31,7 +31,6 @@ header{
 }
 
 header .navigation{
-    display: grid;
     justify-content: center;
     background-color: black;
 }
@@ -49,7 +48,6 @@ header .navigation{
 	padding: 1rem;
 	text-decoration: none;
 	font-size: larger;
-    min-width: 100%;
 }
 
 .navigation a:hover {
@@ -79,20 +77,15 @@ header .navigation{
 	}
 }
 
-
-
-
-
-
 main {
-    padding: 60px 60px;
-    max-width: 1600px;
+    margin: 10px 40px;
 }
 
 main h2 {
     text-align: center;
     align-items: center;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .container {
@@ -104,20 +97,22 @@ main h2 {
 
 figure {
     background-color:#fff;
-    margin: auto;
+    
 }
 
 img {
-    width: 100%; height: auto; margin: .5rem;
+    width: 100%; 
+    height: auto; 
 }
 
 figcaption {
     font-size: smaller;
     text-align: center;
 }
+
 @media (min-width: 700px) {
 	main {
-        padding: 60px 100px;
+        padding: 10px 100px;
         max-width: 1600px;
     }
 }
