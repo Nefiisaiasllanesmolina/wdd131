@@ -32,6 +32,7 @@ header{
 header .navigation{
     justify-content: center;
     background-color: black;
+    margin: 5px;
 }
 
 .navigation ul {
