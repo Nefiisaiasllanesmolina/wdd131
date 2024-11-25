@@ -18,14 +18,13 @@ body {
 
 header h1{
     color: white;
-    margin-bottom: 15px;
 }
 
 header{
     background-color: var(--secondary-color);
     display: grid;
     align-items: center;
-    padding: 20px;
+    padding: 9px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 30px #333;
 }
