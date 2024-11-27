@@ -49,7 +49,7 @@ body {
     color: white;
 }
 
-.color{
+.color #h1{
     color: black;
 }
 
@@ -65,7 +65,7 @@ header{
 	box-shadow: 0 0 30px #333;
 }
 
-.navigation{
+#navigation{
     display: none;
 }
 
@@ -74,20 +74,20 @@ header{
 
 
 /*This is the menu when you click on hamburguer menu */
-.navigation.hiddenlist{
+.hiddenlist{
     /*display: grid;*/
     justify-content: center;
     background-color: black;
     margin: 5px;
 }
 
-.navigation.hiddenlist{
+.hiddenlist ul{
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 }
 
-.navigation.hiddenlist a{
+.hiddenlist a{
 	display: block;
 	color: white;
 	text-align: center;
@@ -96,7 +96,7 @@ header{
 	font-size: larger;
 }
 
-.navigation.hiddenlist a:hover {
+.hiddenlist a:hover {
 	text-decoration: underline double;
 	background-color: #eee;
 	color: #000;
@@ -121,20 +121,20 @@ header{
         color: white;
         margin-bottom: 0px;
     }
-    .navigation{
+    #navigation{
         display: flex;
         justify-content: center;
         background-color: black;
         margin: 5px;
     }
-	.navigation ul {
+	#navigation ul {
         display: flex;
 		justify-content: flex-end;
 		flex-direction: row;
         background-color: var(--secondary-color);
         list-style: none;
 	}
-	.navigation a {
+	#navigation a {
 		flex: 1 1 100%;
         padding: 1rem;
         text-decoration: none;
@@ -156,7 +156,7 @@ main {
     margin: 10px 40px;
 }
 
-main h2 {
+#pagename {
     text-align: center;
     align-items: center;
     padding-bottom: 40px;
