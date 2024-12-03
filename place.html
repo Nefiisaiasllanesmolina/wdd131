@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nefi Llanes">
+    <meta name="description" content="This is my places page">
+    <title>Places page</title>
+    <link rel="stylesheet" href="./styles/place.css">
+    <script src="./scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/guacamayas-large.webp" media="(min-width: 1123px)">
+                <source srcset="images/guacamayas-medium.webp" media="(min-width: 842px)">
+                <img src="./images/guacamayas-small.webp" alt="Guacamayas" width="449" height="800">
+            </picture>
+        </div>
+        
+        <div class="data">
+            <h2 class="h2">Data</h2>
+            <div class="info">
+                <p>Area: </p><span id="area">1,964,375 sq km</span>
+                <p>Population: </p><span id="population">132,274,337</span>
+                <p>Capital: </p><span id="capital">Mexico City</span>
+                <p>Languages: </p><span id="languages">Spanish</span>
+                <p>Currency: </p><span id="currency">Peso mexicanos</span>
+                <p>Time Zone: </p><span id="timezone">UTC-8 to UTC-5</span>
+                <p>Calling Code: </p><span id="code">+52</span>
+                <p>Internet TLD: </p><span id="internet">.mx</span>
+            </div>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="./images/soleado.svg" alt="clima">
+            <div class="infoweather">
+                <p>Temperature: </p><span id="area">22.4°C</span>
+                <p>Conditions: </p><span id="population">Sunny</span>
+                <p>Wind: </p><span id="capital">5km/h</span>
+                <p>Wind Chill: </p><span id="languages">9.8°C</span>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 🦈 Nefi Isaías Llanes Molina 🐬 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

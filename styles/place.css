@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #031D44;
+    --secondary-color: #0076B6;
+    --third-color: #70A288;
+    --fourth-color: #DAB785;
+    --fifth-color: #D5896F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita" , sans-serif;
+}
+
+header{
+    background-color: var(--secondary-color);
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.h2{
+    text-align: center;
+    margin: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.data{
+    padding: 40px 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    column-gap: 10px;
+}
+
+.info p{
+    font-weight: bold;
+    text-align: right;
+}
+
+.info span{
+    font-weight: 100;
+}
+
+.weather{
+    padding: 40px 20px 40px 20px; 
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+
+.weather img{
+    max-width: 160px;
+    margin: auto;
+    padding: 0;
+}
+
+.infoweather{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    column-gap: 10px;
+}
+
+.infoweather p{
+    font-weight: bold;
+    text-align: right;
+}
+
+.infoweather span{
+    font-weight: 100;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+footer #lastModified {
+    color: yellow;
+}
+
+@media (min-width: 680px) {
+    footer p {
+        font-size: 100%;
+    }
+}
