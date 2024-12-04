@@ -36,7 +36,7 @@ main{
     height: auto;
 }
 
-.h2{
+.h2::after{
     text-align: center;
     margin: 30px;
 }
