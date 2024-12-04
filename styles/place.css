@@ -144,6 +144,8 @@ footer #lastModified {
         opacity: 0.75;
         margin-bottom: 40px;
         margin-top: 40px;
+        margin-left: 40px;
+        line-height: 150%;
     }
     .weather{
         background-color: white;
@@ -152,6 +154,9 @@ footer #lastModified {
 	    box-shadow: 0 0 30px #333;
         opacity: 0.75;
         margin-bottom: 40px;
+        line-height: 150%;
+        position: relative;
+        left: 77%;
     }
     .large{
         display: flex;
