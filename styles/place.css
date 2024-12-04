@@ -37,6 +37,7 @@ main{
 }
 
 .h2::after{
+    content: " <- BORING";
     text-align: center;
     margin: 30px;
 }
