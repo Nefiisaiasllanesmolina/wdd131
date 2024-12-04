@@ -36,10 +36,13 @@ main{
     height: auto;
 }
 
-.h2::after{
-    content: "";
+.h2{
     text-align: center;
     margin: 30px;
+}
+
+.h2::after{
+    content: "";
 }
 
 h2{
