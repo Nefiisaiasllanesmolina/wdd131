@@ -26,6 +26,11 @@ header{
     color: white;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -114,14 +119,10 @@ footer #lastModified {
     header{
         font-size: larger;
     }
-
     main{
         background-image: url("../images/flamencos.webp");
         background-size: cover;
-        display: flex;
-        flex-direction: column;
     }
-
     .h2{
         text-align: left;
         margin-top: 0;
@@ -132,28 +133,26 @@ footer #lastModified {
         left: -50px;
         color: white;
     }
-
     .hero img{
         display: none;
     }
-
     .data{
-        justify-content: center;
         background-color: white;
         max-width: 300px;
         border: 1px solid rgba(0, 0, 0, 0.1);
 	    box-shadow: 0 0 30px #333;
         opacity: 0.75;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
-
     .weather{
         background-color: white;
         max-width: 250px;
         border: 1px solid rgba(0, 0, 0, 0.1);
 	    box-shadow: 0 0 30px #333;
         opacity: 0.75;
+        margin-bottom: 40px;
     }
-
     .large{
         display: flex;
         flex-direction: row;
@@ -165,13 +164,11 @@ footer #lastModified {
         left: -20px;
         color: white;
     }
-
     .large img{
         max-width: 40px;
         margin: auto;
         padding: 0;
     }
-
     footer p {
         font-size: medium;
     }
