@@ -23,11 +23,10 @@ if (temperature1<=10 && wind1>4.8){
     }
 }
 else{
-    calculateWindChill.innerHTML = "N/A"
+    calculateWindChill.innerHTML = "N/A";
 }
     
 
-myFunc(temperature1, wind1)
-
+myFunc(temperature1, wind1);
 
 
