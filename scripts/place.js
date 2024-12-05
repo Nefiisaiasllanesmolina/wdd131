@@ -10,14 +10,15 @@ lastModified.innerHTML = `Last Modification: <span>${document.lastModified}</spa
 
 
 
-const windSpeed = document.getElementById("#wind");
+//const windSpeed = document.getElementById("#wind");
+//const temperature = parseInt(document.getElementById("#temperature").value, 10);
 const calculateWindChill = document.querySelector("#windChill");
+const temperature = 10;
+const wind = 5;
 
-
-let nodo;
-const temperature = parseInt(document.getElementById("#temperature").value, 10);
-    
-nodo = temperature;
-calculateWindChill.innerHTML = nodo;
+//nodo = temperature + wind;
+nodo = 13.12 + .6215*(temperature) -11.37*(wind**.16)+.3965*(temperature)*(wind**.16);
+si = nodo.toFixed(2);
+calculateWindChill.innerHTML = `<span>${si}°C</span>`;;
 
 
