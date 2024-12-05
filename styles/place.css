@@ -160,7 +160,7 @@ footer #lastModified {
         margin-bottom: 40px;
         line-height: 150%;
         position: relative;
-        left: 77%;
+        left: 56%;
     }
     .large{
         display: flex;
@@ -181,4 +181,32 @@ footer #lastModified {
     footer p {
         font-size: medium;
     }
+}
+
+@media (min-width: 720px) {
+    .weather{
+        position: relative;
+        left: 59%;
+}
+}
+
+@media (min-width: 800px) {
+    .weather{
+        position: relative;
+        left: 64%;
+}
+}
+
+@media (min-width: 920px) {
+    .weather{
+        position: relative;
+        left: 69%;
+}
+}
+
+@media (min-width: 1040px) {
+    .weather{
+        position: relative;
+        left: 76%;
+}
 }
