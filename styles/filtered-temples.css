@@ -1,0 +1,191 @@
+:root {
+    --primary-color: #031D44;
+    --secondary-color: #0076B6;
+    --third-color: #70A288;
+    --fourth-color: #DAB785;
+    --fifth-color: #D5896F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita" , sans-serif;
+}
+
+.header{
+    display: grid;
+    margin: 2px 8px;
+}
+
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "❎";
+}
+
+.open a{
+    display: block;
+}
+
+
+
+#h1{
+    color: white;
+}
+
+.color #h1{
+    color: black;
+}
+
+
+
+
+header{
+    background-color: var(--secondary-color);
+    display: grid;
+    align-items: center;
+    padding: 9px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+#navigation{
+    display: none;
+}
+
+
+
+
+
+/*This is the menu when you click on hamburguer menu */
+.hiddenlist{
+    /*display: grid;*/
+    justify-content: center;
+    background-color: black;
+    margin: 5px;
+}
+
+.hiddenlist ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.hiddenlist a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.hiddenlist a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+/*Here end the menu when you click on hamnburguer menu*/
+
+main {
+    margin: 10px 40px;
+}
+
+#pagename {
+    text-align: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figure {
+    background-color:#fff;
+    
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+footer #lastModified {
+    color: #ffff00;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 680px) {
+    #menu{
+        display: none;
+    }
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+    header #h1{
+        color: white;
+        margin-bottom: 0px;
+    }
+    #navigation{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        margin: 5px;
+    }
+	#navigation ul {
+        display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+        background-color: var(--secondary-color);
+        list-style: none;
+	}
+	#navigation a {
+		flex: 1 1 100%;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+	}
+    main {
+        padding: 10px 40px;
+        max-width: 1600px;
+    }
+}
