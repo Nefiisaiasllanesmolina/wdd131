@@ -75,7 +75,7 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-      templeName: "Merida, Mexico",
+      templeName: "Merida Mexico",
       location: "Mérida, Yucatán, Mexico",
       dedicated: "2000, July, 8",
       area: 10700,
@@ -83,7 +83,7 @@ const temples = [
       "https://churchofjesuschristtemples.org/assets/img/temples/merida-mexico-temple/merida-mexico-temple-14119-main.jpg"
     },
     {
-      templeName: "Tijuana, México",
+      templeName: "Tijuana México",
       location: "Tijuana, Baja California, Mexico",
       dedicated: "2015, December, 13",
       area: 33367,
@@ -91,7 +91,7 @@ const temples = [
       "https://churchofjesuschristtemples.org/assets/img/temples/tijuana-mexico-temple/tijuana-mexico-temple-14590-main.jpg"
     },
     {
-      templeName: "Puebla, Mexico",
+      templeName: "Puebla Mexico",
       location: "Puebla, Mexico",
       dedicated: "2024, May, 19",
       area: 35865,
@@ -99,3 +99,9 @@ const temples = [
       "https://churchofjesuschristtemples.org/assets/img/temples/puebla-mexico-temple/puebla-mexico-temple-46342-main.jpg"
     },
   ];
+
+  
+  var images = temples.map(function(element){
+    return '<li>'+element.templeName+' '+element.location+' '+element.dedicated+' '+element.size+element.imageUrl+'</li>'
+  })
+  document.getElementById("templesImages").innerHTML = images;
