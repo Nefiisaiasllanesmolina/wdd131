@@ -100,10 +100,21 @@ const temples = [
     },
   ];
 
-  createTempleCard();
+  createTempleCard(temples);
 
-  function createTempleCard() {
-    temples.forEach(temple => {
+  const nonutahLink = document.querySelector("#nonutah");
+  const oldLink = document.querySelector("#old");
+  const newLink = document.querySelector("#new");
+  const largeLink = document.querySelector("#large");
+  const smallLink = document.querySelector("#small");
+
+  nonutahLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+  });
+
+  function createTempleCard(filteredTemples) {
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
       let card = document.createElement("section");
       let name = document.createElement("h3");
       let location = document.createElement("p");
