@@ -102,22 +102,17 @@ const temples = [
 
   createTempleCard(temples);
 
-  const nonutahLink = document.querySelector("#nonutah");
   const oldLink = document.querySelector("#old");
   const newLink = document.querySelector("#new");
   const largeLink = document.querySelector("#large");
   const smallLink = document.querySelector("#small");
 
-  nonutahLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
-  });
-
   oldLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => (temple.area < 7000)));
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("19")));
   });
 
   newLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("20")));
   });
 
   largeLink.addEventListener("click", () => {

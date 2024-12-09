@@ -55,9 +55,10 @@ body {
 }
 
 section{
+    padding: 10px;
     min-width: 300px;
     border: 1px solid gray;
-    background-color: gray;
+    background-color: rgb(240, 240, 240);
     text-align: center;
 }
 
@@ -70,7 +71,7 @@ section img{
     width: 100%;
     height: auto;
     margin-top: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(150, 150, 150);
     box-shadow: 0 0 10px #333;
 }
 
