@@ -112,6 +112,22 @@ const temples = [
     createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
   });
 
+  oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temple.area < 7000)));
+  });
+
+  newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+  });
+
+  largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temple.area > 90000)));
+  });
+
+  smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temple.area < 10000)));
+  });
+
   function createTempleCard(filteredTemples) {
     document.querySelector(".container").innerHTML = "";
     filteredTemples.forEach(temple => {
