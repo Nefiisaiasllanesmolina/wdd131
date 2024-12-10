@@ -17,41 +17,13 @@ body {
 }
 
 .header{
-    display: grid;
+    display: flex;
+    justify-content: center;
     margin: 2px 8px;
 }
 
-#menu{
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
+.header h1 {
     color: white;
-    grid-column: 3;
-    grid-row: 1;
-    justify-content: flex-end;
-    margin-left: auto;
-}
-
-#menu::before{
-    content: "☰";
-}
-
-#menu.open::before{
-    content: "❎";
-}
-
-.open a{
-    display: block;
-}
-
-
-
-#h1{
-    color: white;
-}
-
-.color #h1{
-    color: black;
 }
 
 section{
