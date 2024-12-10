@@ -19,6 +19,7 @@ body {
 .header{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 2px 8px;
 }
 
@@ -155,13 +156,10 @@ footer #lastModified {
 
 /* Larger Views ******************************/
 @media (min-width: 680px) {
-    #menu{
-        display: none;
-    }
 	header {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+        justify-content: center;
 	}
     header #h1{
         color: white;
