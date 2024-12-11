@@ -16,6 +16,15 @@ body {
     font-family: "Sansita" , sans-serif;
 }
 
+header{
+    background-color: var(--secondary-color);
+    display: grid;
+    align-items: center;
+    padding: 9px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -27,84 +36,6 @@ body {
     color: white;
 }
 
-section{
-    padding: 10px;
-    min-width: 300px;
-    border: 1px solid gray;
-    background-color: rgb(240, 240, 240);
-    text-align: center;
-}
-
-h3{
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-section img{
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border: 1px solid rgb(150, 150, 150);
-    box-shadow: 0 0 10px #333;
-}
-
-section span{
-    color: blue;
-}
-
-img{
-    overflow: clip;
-}
-
-
-
-header{
-    background-color: var(--secondary-color);
-    display: grid;
-    align-items: center;
-    padding: 9px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
-}
-
-#navigation{
-    display: none;
-}
-
-
-
-
-
-/*This is the menu when you click on hamburguer menu */
-.hiddenlist{
-    /*display: grid;*/
-    justify-content: center;
-    background-color: black;
-    margin: 5px;
-}
-
-.hiddenlist ul{
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-}
-
-.hiddenlist a{
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-	font-size: larger;
-}
-
-.hiddenlist a:hover {
-	text-decoration: underline double;
-	background-color: #eee;
-	color: #000;
-}
-/*Here end the menu when you click on hamnburguer menu*/
-
 main {
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -112,35 +43,48 @@ main {
     margin-left: 40px;
 }
 
-#pagename {
-    text-align: center;
-    align-items: center;
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-
-.container {
-    display:grid; 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    grid-gap: 25px;
-    place-items: center;
-}
-
-figure {
-    background-color:#fff;
+form {
+    border: 1px solid gray;
     
 }
 
-img {
-    width: 100%; 
-    height: auto; 
+fieldset {
+    border-style: none;
+    margin: 5%;
 }
 
-figcaption {
-    font-size: smaller;
-    text-align: center;
+.apply {
+    font-style: italic;
 }
 
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox label {
+    padding: .2rem 0rem .2rem 0rem;
+}
+
+
+.textarea {
+    display: block;
+}
+
+#textarea {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.postreview {
+    width: 90%;
+    margin: auto;
+    margin: 5%;
+}
 
 footer {
     background-color: var(--secondary-color);
@@ -165,26 +109,7 @@ footer #lastModified {
         color: white;
         margin-bottom: 0px;
     }
-    #navigation{
-        display: flex;
-        justify-content: center;
-        background-color: black;
-        margin: 5px;
-    }
-	#navigation ul {
-        display: flex;
-		justify-content: flex-end;
-		flex-direction: row;
-        background-color: var(--secondary-color);
-        list-style: none;
-	}
-	#navigation a {
-		flex: 1 1 100%;
-        padding: 1rem;
-        text-decoration: none;
-        color: white;
-        font-size: larger;
-	}
+    
     main {
         padding: 10px 40px;
         max-width: 1600px;

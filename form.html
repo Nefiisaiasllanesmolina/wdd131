@@ -45,9 +45,9 @@
                 <label>Date of Installation<input type="date" name="installationdate" required></label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="checkbox">
                 <div>Which features did you find useful in the product?</div>
-                <div>(Check all that apply)</div>
+                <div class="apply">(Check all that apply)</div>
                 <label><input type="checkbox" name="durability" value="durability" id="durability">Durability</label>
                 <label><input type="checkbox" name="ease" value="ease" id="ease">Ease of Use</label>
                 <label><input type="checkbox" name="performance" value="performance" id="performance">Performance</label>
@@ -55,15 +55,15 @@
             </fieldset>
                 
             <fieldset>
-                <label>Written Review (Optional)</label>
-                <textarea name="textarea"></textarea>
+                <label class="textarea">Written Review (Optional)</label>
+                <textarea name="textarea" id="textarea"></textarea>
             </fieldset>
 
             <fieldset>
-                <label>Your Name (Optional)<input type="text" name="name" id="name"></label>
+                <label class="text">Your Name (Optional)<input type="text" name="name" id="name"></label>
             </fieldset>
 
-            <input type="submit" value="Post Review">
+            <input type="submit" value="Post Review" class="postreview">
         </form>
     </main>
     <footer>
