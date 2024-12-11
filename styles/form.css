@@ -45,12 +45,41 @@ main {
 
 form {
     border: 1px solid gray;
-    
+    background-color: #D5CDD5;
 }
 
 fieldset {
     border-style: none;
     margin: 5%;
+}
+
+#selectaproduct {
+    display: block;
+    width: 100%;
+    padding: .4rem;
+}
+
+input[type="date"] {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .2rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    justify-content: right;
+}
+
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star1, .star2, .star3, .star4, .star5 {
+    display: flex;
+    flex-direction: column;
+    margin-top: .3rem;
 }
 
 .apply {
@@ -65,7 +94,6 @@ fieldset {
 .checkbox label {
     padding: .2rem 0rem .2rem 0rem;
 }
-
 
 .textarea {
     display: block;
@@ -84,6 +112,7 @@ fieldset {
     width: 90%;
     margin: auto;
     margin: 5%;
+    padding: .3rem;
 }
 
 footer {
