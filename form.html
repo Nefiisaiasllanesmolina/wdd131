@@ -26,7 +26,6 @@
                 <label>Product name
                     <select name="selectaproduct" id="selectaproduct" required>
                         <option value=""  disabled selected>Select a Product</option>
-                        <option value="1">Hola</option>
                   </select>
                 </label>  
             </fieldset>
@@ -44,7 +43,7 @@
             </fieldset>
 
             <fieldset>
-                <label>Date of Installation<input type="date" class="date" name="installationdate" required></label>
+                <label>Date of Installation<input type="date" class="date" name="installationdate" min="2001-01-01" max="2024-12-31"></label>
             </fieldset>
 
             <fieldset class="checkbox">

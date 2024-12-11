@@ -44,6 +44,7 @@ main {
 }
 
 form {
+    margin-top: 4rem;
     border: 1px solid gray;
     background-color: #D5CDD5;
 }
@@ -57,19 +58,19 @@ fieldset {
     display: block;
     width: 100%;
     padding: .4rem;
+    font-size: 15px;
 }
 
 input[type="date"] {
-    display: flex;
-    justify-content: space-between;
+    position: relative;;
     width: 100%;
     padding: .2rem;
+    font-size: 15px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    justify-content: right;
+    float: right;
 }
-
 
 .stars {
     display: flex;
@@ -101,6 +102,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 #textarea {
     width: 100%;
+    font-size: 20px;
+    min-height: 8rem;
 }
 
 .text {
@@ -108,11 +111,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-direction: column;
 }
 
+input[type="text"] {
+    min-height: 2rem;
+}
+
 .postreview {
     width: 90%;
-    margin: auto;
-    margin: 5%;
+    margin: 0% 5% 2rem 5%;
     padding: .3rem;
+    font-size: 18px;
 }
 
 footer {
