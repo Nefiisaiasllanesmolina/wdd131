@@ -17,11 +17,54 @@
     <header>
         <div class="header">
             <h1 id="h1">Product Review</h1>
-            <button id="menu"></button>
         </div>
     </header>
     <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <!--<legend>Product Name</legend>-->
+                <label>Product name
+                    <select name="selectaproduct" id="selectaproduct" required>
+                        <option value=""  disabled selected>Select a Product</option>
+                        <option value="1">Hola</option>
+                  </select>
+                </label>  
+            </fieldset>
 
+            <fieldset>
+                <!--<legend>Product Name</legend>-->
+                <div>Overall Rating</div>
+                <label><input type="radio" name="rating" value="1star" id="1star" required>☆</label>
+                <label><input type="radio" name="rating" value="2star" id="2star" required>☆☆</label>
+                <label><input type="radio" name="rating" value="3star" id="3star" required>☆☆☆</label>
+                <label><input type="radio" name="rating" value="4star" id="4star" required>☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5star" id="5star" required>☆☆☆☆☆</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Date of Installation<input type="date" name="installationdate" required></label>
+            </fieldset>
+
+            <fieldset>
+                <div>Which features did you find useful in the product?</div>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="durability" id="durability">Durability</label>
+                <label><input type="checkbox" name="ease" value="ease" id="ease">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="performance" id="performance">Performance</label>
+                <label><input type="checkbox" name="desing" value="design" id="design">Design</label>
+            </fieldset>
+                
+            <fieldset>
+                <div>Written Review <p>(Optional)</p></div>
+                <textarea name="textarea" rows="" cols=""></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name<p>(Optional)</p><input type="text" name="name" id="name"></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
     </main>
     <footer>
         <p>© <span id="currentyear"></span> 🦈 Nefi Isaías Llanes Molina 🐬 Mexico</p>
