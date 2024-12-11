@@ -37,14 +37,14 @@ header{
 }
 
 main {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
     margin-right: 40px;
     margin-left: 40px;
 }
 
 form {
-    margin-top: 3rem;
+    margin-top: 2rem;
     border: 1px solid gray;
     background-color: #D5CDD5;
 }
