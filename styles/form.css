@@ -135,19 +135,10 @@ footer #lastModified {
 }
 
 /* Larger Views ******************************/
-@media (min-width: 680px) {
-	header {
-		display: flex;
-		align-items: center;
-        justify-content: center;
-	}
-    header #h1{
-        color: white;
-        margin-bottom: 0px;
-    }
-    
-    main {
-        padding: 10px 40px;
-        max-width: 1600px;
+@media (min-width: 680px) {    
+    form {
+        margin-top: 3.5rem;
+        max-width: 60%;
+        margin: auto;
     }
 }
