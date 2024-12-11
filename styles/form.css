@@ -138,7 +138,7 @@ footer #lastModified {
 @media (min-width: 680px) {    
     form {
         margin-top: 3.5rem;
-        max-width: 60%;
+        max-width: 50%;
         margin: auto;
     }
 }

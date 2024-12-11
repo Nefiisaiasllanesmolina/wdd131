@@ -44,3 +44,36 @@ const products = [
       averagerating: 5.0
     }
   ];
+
+
+
+
+
+
+
+  createTempleCard(temples);
+
+  const listproduct = document.getElementById("selectaproduct");
+
+  listproduct.addEventListener("click", () => {
+    createTempleCard(products);
+  });
+
+  function createTempleCard(filteredTemples) {
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
+      let card = document.createElement("section");
+      let name = document.createElement("option");
+
+      name.textContent = temple.templeName;
+
+      card.appendChild(name);
+
+      document.querySelector(".container").appendChild(card);
+    });
+  }
+  
+  var images = temples.map(function(element){
+    return '<li>'+element.templeName+' '+element.location+' '+element.dedicated+' '+element.size+element.imageUrl+'</li>'
+  })
+  document.getElementById("templesImages").innerHTML = images;
