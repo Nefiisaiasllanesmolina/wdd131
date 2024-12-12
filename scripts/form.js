@@ -54,3 +54,5 @@ function insertCategory(categoryName) {
   let htmlToInsert = `<option> ${categoryName} </option>`;
   selectElement.insertAdjacentHTML("beforeend", htmlToInsert);
 };
+
+insertCategory(hola);insertCategory(hola);insertCategory(hola);insertCategory(hola);
