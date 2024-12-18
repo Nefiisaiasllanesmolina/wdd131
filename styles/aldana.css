@@ -1,6 +1,6 @@
 :root {
     --primary-color: #050517;
-    --secondary-color: #3685CF;
+    --secondary-color: #515CBA;
     --third-color: #696A6A;
     --background-color: #FFFFFF;
 }
@@ -105,33 +105,47 @@ header img{
     text-decoration: none;
     color: white;
     font-size: larger;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
 main {
     margin: 0;
     padding: 0;
     margin-bottom: 4%;
 }
-.section1 p{
-    margin: 0 25% 0 25%;
+.section1 h2{
+    color: var(--secondary-color);
+}
+.pnormal{
+    margin: 0 18% 0% 18%;
     text-align: justify;
 }
+.pespecial{
+    margin: 0 18% 18% 18%;
+    text-align: center;
+}
 .section2 {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
-.section2 h2{
+.h2{
+    margin-bottom: 4%;
     text-align: center;
+    color: var(--secondary-color);
 }
 .section2 img{
-    width: 35%;
-    margin-left: 8%;
-    margin-right: 2%;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5%;
 }
 .section2 p{
-    margin-right: 8%;
-    margin-left: 2%;
+    margin-right: 15%;
+    margin-left: 15%;
     text-align: justify;
+    margin-bottom: 5%;
 }
 
 
@@ -202,6 +216,7 @@ footer {
         background-image: url("../images/aldana.jpg");
         background-size: cover;
         background-position: top;
+        margin-bottom: 3%;
     }
     #navigation{
         display: flex;
@@ -227,9 +242,13 @@ footer {
         padding: 0;
         margin-bottom: 4%;
     }
-    .section1 p{
-        margin: 0 25% 0 25%;
+    .pnormal{
+        margin: 0 25% 0% 25%;
         text-align: justify;
+    }
+    .pespecial{
+        text-align: center;
+        margin: 0 25% 8% 25%;
     }
     .section2 {
         display: flex;
