@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #050517;
+    --secondary-color: #3685CF;
+    --third-color: #696A6A;
+    --background-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin: 40px 0px;
+  }
+
+  h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin: 30px 0px;
+  }
+
+p {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+.principal {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.third {
+    background-color: var(--third-color);
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.header{
+    display: grid;
+    margin: 2px 8px;
+    background-color: var(--primary-color);
+}
+
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+header img{
+    margin-left: 15px;
+    width: 18%;
+}
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/aldana.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#navigation{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 5px;
+}
+#navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+}
+#navigation a {
+    flex: 1 1 100%;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+main {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4%;
+}
+.section1 p{
+    margin: 0 25% 0 25%;
+    text-align: justify;
+}
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2 h2{
+    text-align: center;
+}
+.section2 img{
+    width: 35%;
+    margin-left: 8%;
+    margin-right: 2%;
+}
+.section2 p{
+    margin-right: 8%;
+    margin-left: 2%;
+    text-align: justify;
+}
+
+
+.open a{
+    display: block;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    align-items: center;
+    padding: 1%;
+}
+.footer {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+.footer img{
+    width: 20%;
+}
+#enlace {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+.sociallinks a {
+    text-decoration: none;
+}
+.footerimg  {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: auto;
+}
+.sociallinks img {
+    padding-right: 2%;
+    width: 12%;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 680px) {
+    #menu{
+        display: none;
+    }
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        background-color: var(--primary-color);
+        padding: 10px;
+	}
+    header img{
+        margin-left: 15px;
+        width: 18%;
+    }
+    .zona1{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/aldana.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+    #navigation{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        margin: 5px;
+    }
+	#navigation ul {
+        display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+        list-style: none;
+	}
+	#navigation a {
+		flex: 1 1 100%;
+        padding: 1.2rem;
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+	}
+    main {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4%;
+    }
+    .section1 p{
+        margin: 0 25% 0 25%;
+        text-align: justify;
+    }
+    .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section2 h2{
+        text-align: center;
+    }
+    .section2 img{
+        width: 35%;
+        margin-left: 8%;
+        margin-right: 2%;
+    }
+    .section2 p{
+        margin-right: 8%;
+        margin-left: 2%;
+        text-align: justify;
+    }
+    .footerimg  {
+        grid-column: 3;
+        grid-row: 1;
+        margin-left: auto;
+    }
+    .sociallinks img {
+        padding-right: 10px;
+        width: 40px;
+    }
+}
