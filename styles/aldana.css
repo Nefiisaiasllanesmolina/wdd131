@@ -32,24 +32,8 @@ p {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    font-size: larger;
   }
-
-.principal {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.secondary {
-    background-color: var(--secondary-color);
-}
-
-.third {
-    background-color: var(--third-color);
-}
-
-.background {
-    background-color: var(--background-color);
-}
 
 .header{
     display: grid;
@@ -125,6 +109,7 @@ main {
 .pespecial{
     margin: 0 18% 18% 18%;
     text-align: center;
+    font-weight: 700;
 }
 .section2 {
     display: grid;
@@ -180,17 +165,18 @@ footer {
     text-decoration: none;
     color: white;
 }
+.footerimg  {
+    display: flex;
+    grid-column: 3;
+    margin-left: auto;
+    align-items: center;
+}
 .sociallinks a {
     text-decoration: none;
 }
-.footerimg  {
-    grid-column: 3;
-    grid-row: 1;
-    margin-left: auto;
-}
 .sociallinks img {
-    padding-right: 2%;
-    width: 12%;
+    padding-right: 10px;
+    width: 30px;
 }
 
 /* Larger Views ******************************/
