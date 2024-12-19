@@ -166,7 +166,7 @@ main {
     padding: 10px 20px;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     background-color: var(--secondary-color);
     width: 180px;
