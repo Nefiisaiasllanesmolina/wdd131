@@ -8,7 +8,7 @@
     <title>Aldana Fotografía</title>
     <link rel="icon" type="image/png" href="./images/logo.png">
     <script src="./scripts/aldana.js" defer></script>
-    <link rel="stylesheet" href="./styles/aldana.css">
+    <link rel="stylesheet" href="./styles/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -28,7 +28,52 @@
         </nav>
     </header>
     <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <!--<legend>Product Name</legend>-->
+                <label>Product name</label> 
+                    <select name="selectaproduct" id="selectaproduct" required>
+                        <option value=""  disabled selected>Select a Product</option>
+                  </select>
+                 
+            </fieldset>
 
+            <fieldset>
+                <!--<legend>Product Name</legend>-->
+                <div>Overall Rating</div>
+                <div class="stars">
+                    <label class="star1">☆<input type="radio" name="rating" value="1star" id="1star" required></label>
+                    <label class="star2">☆☆<input type="radio" name="rating" value="2star" id="2star" required></label>
+                    <label class="star3">☆☆☆<input type="radio" name="rating" value="3star" id="3star" required></label>
+                    <label class="star4">☆☆☆☆<input type="radio" name="rating" value="4star" id="4star" required></label>
+                    <label class="star5">☆☆☆☆☆<input type="radio" name="rating" value="5star" id="5star" required></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label>Date of Installation<input type="date" class="date" id="date" name="installationdate" min="2001-01-01" max="2024-12-31" required></label>
+            </fieldset>
+
+            <fieldset class="checkbox">
+                <div>Which features did you find useful in the product?</div>
+                <div class="apply">(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="durability" id="durability">Durability</label>
+                <label><input type="checkbox" name="ease" value="ease" id="ease">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="performance" id="performance">Performance</label>
+                <label><input type="checkbox" name="desing" value="design" id="design">Design</label>
+            </fieldset>
+                
+            <fieldset>
+                <label class="textarea">Written Review (Optional)</label>
+                <textarea name="textarea" id="textarea"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label class="text">Your Name (Optional)<input type="text" name="name" id="name"></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review" class="postreview">
+        </form>
     </main>
     <footer id="enlace">
         <div class="footer">
